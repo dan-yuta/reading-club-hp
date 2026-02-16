@@ -26,14 +26,48 @@
 
 ### ローカルで確認する
 
-`index.html` は `fetch()` で JSON を読み込むため、ファイルを直接ブラウザで開くと動作しません。
-`_dev/` フォルダにローカル確認用のツールを用意しています。
+`index.html` は `fetch()` で JSON を読み込むため、**ファイルを直接ブラウザで開くと動作しません**。
+ローカルHTTPサーバーを起動して確認する必要があります。
+
+#### 方法1: Python（推奨・インストール不要な場合が多い）
+
+```bash
+# プロジェクトのルートに移動
+cd path/to/reading-club-hp
+
+# サーバー起動（Python 3）
+python -m http.server 8000
+
+# ブラウザで開く → http://localhost:8000
+# 停止するには Ctrl + C
+```
+
+#### 方法2: Node.js
+
+```bash
+# npx なら追加インストール不要
+npx serve .
+
+# ブラウザで開く → http://localhost:3000
+# 停止するには Ctrl + C
+```
+
+#### 方法3: VS Code 拡張機能
+
+1. VS Code で [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) をインストール
+2. `index.html` を右クリック → **「Open with Live Server」**
+3. ブラウザが自動で開く（ファイル保存時に自動リロード）
+
+#### 方法4: _dev/ フォルダ（Windows向け）
+
+`_dev/` フォルダにローカル確認用のバッチファイルを用意しています。
 
 1. `_dev/start-server.bat` をダブルクリック
 2. ブラウザが自動で `http://localhost:8000` を開く
 3. 確認が終わったら `_dev/stop-server.bat` をダブルクリックで停止
 
-> `_dev/` は `.gitignore` で除外されているため、デプロイには含まれません。
+> `_dev/` は `.gitignore` で除外されているため、GitHub / Netlify には含まれません。
+> 必要な場合は手動で作成してください。
 
 ### Netlify にデプロイする
 

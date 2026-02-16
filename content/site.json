@@ -254,10 +254,10 @@
     "sns": []
   },
   "images": {
-    "hero": "assets/images/hero.png",
-    "reassurance": "assets/images/reassurance.png",
-    "growth": "assets/images/growth.png",
-    "flow": "assets/images/flow.png",
-    "cta": "assets/images/cta.png"
+    "hero": "assets/images/hero.webp",
+    "reassurance": "assets/images/reassurance.webp",
+    "growth": "assets/images/growth.webp",
+    "flow": "assets/images/flow.webp",
+    "cta": "assets/images/cta.webp"
   }
 }
