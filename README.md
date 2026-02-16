@@ -93,6 +93,8 @@ npx serve .
 |---|---|---|
 | キャッチコピー | `hero.headline` | 改行は `\n` |
 | 申込みURL | `links.apply_url` | Googleフォーム |
+| 読書会へ行こう！URL | `links.dokusyokai_url` | 日程確認・参加申込み |
+| こくちーずURL | `links.kokucheese_url` | 日程確認・参加申込み |
 | noteリンク | `links.note_url` | 空なら非表示 |
 | 開催日時 | `schedule.items[0].value` | 上部簡易版に表示 |
 | 安心ポイントの数字 | `reassurance.items[1].stat` | 空なら非表示 |
