@@ -759,6 +759,7 @@
     var mapping = [
       { key: "reassurance", elId: "reassurance-image", alt: "安心ポイント" },
       { key: "growth", elId: "growth-image", alt: "成長できる理由" },
+      { key: "flow", elId: "flow-image", alt: "発表の流れ" },
       { key: "cta", elId: "cta-image", alt: "参加イメージ" }
     ];
 
