@@ -13,14 +13,9 @@
 
 ## デザイン
 
-- Airbnb / MUJI / Notion 風のクリーンで洗練されたデザイン
-- カラースキーム: 青系（ネイビー / スカイブルー）
-- ヒーロー: 2カラムのエディトリアルレイアウト
-- 各セクション: カード、番号付きリスト、タイムライン等を使い分け
-- スクロールフェードインアニメーション（IntersectionObserver）
-- レスポンシブ対応（3ブレークポイント: 639px / 959px / 1199px）
-- モバイル固定CTAバー
-- トップに戻るボタン（右下）
+Airbnb / MUJI / Notion 風のクリーンで洗練されたデザイン。レスポンシブ対応。
+
+> 詳細（カラーパレット・フォント・レスポンシブ・アニメーション・セクション別レイアウト等）は [Notion ドキュメント](https://www.notion.so/LP-3094fafd667380bdab76eb2f9a114189) を参照してください。
 
 ## セットアップ
 
@@ -84,8 +79,6 @@ npx serve .
 ## コンテンツの更新
 
 **更新は基本 `content/site.json` を触るだけです。**
-
-詳細は以下を参照してください。
 
 ### 主な更新箇所
 
@@ -170,10 +163,11 @@ npx serve .
 - Google Search Console 登録済み + sitemap送信済み
 - 構造化データ（JSON-LD: Organization + WebSite）
 
-### 今後のTODO
+### 完了済みの改善
 
 - [x] 画像の WebP 変換（PNG 35MB → WebP 760KB、98%削減）
 - [x] canonical URL の設定
 - [x] Google Search Console 登録 + sitemap送信
 - [x] 構造化データ（JSON-LD）追加（Organization + WebSite）
 - [x] Lighthouse パフォーマンス改善（43→65: フォント非同期・logo WebP化・画像サイズ指定・コントラスト修正）
+- [x] 不要ファイル削除・フォルダ整理
