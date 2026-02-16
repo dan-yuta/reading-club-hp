@@ -9,7 +9,7 @@
 - HTML / CSS / JavaScript（フレームワーク不使用）
 - コンテンツは `content/site.json` で一元管理
 - Google Fonts: Noto Sans JP + Noto Serif JP
-- Netlify でデプロイ
+- Netlify でデプロイ（https://reading-club-hp.netlify.app/）
 
 ## デザイン
 
@@ -76,10 +76,10 @@ npx serve .
 3. ビルド設定:
    - **Publish directory**: `.`（ルート）
    - ビルドコマンド: 不要（静的サイト）
-4. デプロイ後、以下を更新する:
-   - `index.html` の `<link rel="canonical">` コメントを解除し、本番URLを設定
-   - `public/robots.txt` の Sitemap URL を本番URLに変更
-   - `public/sitemap.xml` の `<loc>` を本番URLに変更
+4. デプロイ後、以下を更新する（設定済み）:
+   - ~~`index.html` の `<link rel="canonical">` コメントを解除し、本番URLを設定~~ ✅
+   - ~~`public/robots.txt` の Sitemap URL を本番URLに変更~~ ✅
+   - ~~`public/sitemap.xml` の `<loc>` を本番URLに変更~~ ✅
 
 ## コンテンツの更新
 
@@ -104,11 +104,11 @@ npx serve .
 
 | 画像 | JSON パス | ファイル | 用途 |
 |---|---|---|---|
-| ヒーロー | `images.hero` | `assets/images/hero.png` | メインビジュアル右側 |
-| 安心ポイント | `images.reassurance` | `assets/images/reassurance.png` | セクション上部 |
-| 成長できる理由 | `images.growth` | `assets/images/growth.png` | セクション上部 |
-| 発表の流れ | `images.flow` | `assets/images/flow.png` | セクション上部 |
-| CTA | `images.cta` | `assets/images/cta.png` | 申込みセクション |
+| ヒーロー | `images.hero` | `assets/images/hero.webp` | メインビジュアル右側 |
+| 安心ポイント | `images.reassurance` | `assets/images/reassurance.webp` | セクション上部 |
+| 成長できる理由 | `images.growth` | `assets/images/growth.webp` | セクション上部 |
+| 発表の流れ | `images.flow` | `assets/images/flow.webp` | セクション上部 |
+| CTA | `images.cta` | `assets/images/cta.webp` | 申込みセクション |
 
 - 画像はナノバナナ（Google Gemini Image）で生成
 - JSON の値を空にすると、その画像は非表示になる
@@ -126,11 +126,11 @@ npx serve .
 │   │   └── main.js         # JSON読み込み・DOM構築・SVGアイコン・アニメーション
 │   └── images/
 │       ├── logo.png         # ロゴ（ヘッダー・ヒーロー・ファビコン元画像）
-│       ├── hero.png         # ヒーロー画像
-│       ├── reassurance.png  # 安心ポイント画像
-│       ├── growth.png       # 成長できる理由画像
-│       ├── flow.png         # 発表の流れ画像
-│       ├── cta.png          # CTA画像
+│       ├── hero.webp        # ヒーロー画像
+│       ├── reassurance.webp # 安心ポイント画像
+│       ├── growth.webp      # 成長できる理由画像
+│       ├── flow.webp        # 発表の流れ画像
+│       ├── cta.webp         # CTA画像
 │       ├── favicon.ico      # ファビコン
 │       ├── favicon-*.png    # 各サイズファビコン（16/32/48/180/192/512）
 │       └── README.md        # 画像の配置ルール
@@ -160,13 +160,13 @@ npx serve .
 - 構造化された HTML（セマンティックタグ、aria-label）
 - OGP / Twitter Card メタタグ設定済み
 - robots.txt / sitemap.xml 配備済み
-- canonical URL（デプロイ後に設定）
+- canonical URL 設定済み
 - Google Fonts の preconnect 設定
 - 画像の lazy loading（`loading="lazy"`）
 
 ### 今後のTODO
 
-- [ ] 画像の WebP 変換（現在PNG 5〜7MB → 目標 200KB以下）
+- [x] 画像の WebP 変換（PNG 35MB → WebP 760KB、98%削減）
+- [x] canonical URL の設定
 - [ ] Google Search Console 登録 + sitemap送信
 - [ ] 構造化データ（JSON-LD）追加
-- [ ] canonical URL の設定（デプロイ後）
