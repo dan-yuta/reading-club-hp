@@ -709,7 +709,7 @@ ul, ol { list-style: none; }
 .footer__note-link { display: inline-block; margin-top: var(--space-3); }
 .footer__copyright {
   font-family: var(--font-en); font-size: var(--text-xs);
-  color: var(--color-text-muted); letter-spacing: 0.06em;
+  color: var(--color-text-secondary); letter-spacing: 0.06em;
 }
 
 /* ============================================

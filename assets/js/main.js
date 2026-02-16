@@ -789,7 +789,7 @@
       if (!wrapper) return;
       if (hasValue(images[item.key])) {
         wrapper.innerHTML =
-          '<img src="' + escapeHtml(images[item.key]) + '" alt="' + item.alt + '" class="section__image" loading="lazy">';
+          '<img src="' + escapeHtml(images[item.key]) + '" alt="' + item.alt + '" class="section__image" loading="lazy" width="640" height="427">';
       } else {
         wrapper.classList.add("is-hidden");
       }

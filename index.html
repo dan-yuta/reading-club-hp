@@ -33,12 +33,14 @@
   <link rel="icon" href="assets/images/favicon-192x192.png" type="image/png" sizes="192x192">
   <link rel="icon" href="assets/images/favicon-512x512.png" type="image/png" sizes="512x512">
 
-  <!-- Google Fonts: Noto Sans JP + Inter -->
+  <!-- Google Fonts: Noto Sans JP + Inter (非同期読み込み) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600;700&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
 
-  <link rel="stylesheet" href="assets/css/styles.css?v=4">
+  <link rel="stylesheet" href="assets/css/styles.css?v=5">
 
   <!-- 構造化データ（JSON-LD） -->
   <script type="application/ld+json">
@@ -47,7 +49,7 @@
     "@type": "Organization",
     "name": "シン・ビジネス、自己啓発読書会",
     "url": "https://reading-club-hp.netlify.app/",
-    "logo": "https://reading-club-hp.netlify.app/assets/images/logo.png",
+    "logo": "https://reading-club-hp.netlify.app/assets/images/logo.webp",
     "description": "20〜30代向けのオンライン読書会。初心者歓迎・一人参加が当たり前の、フラットで成長できる読書コミュニティです。参加費無料。",
     "sameAs": [
       "https://x.com/bookmeeting999",
@@ -72,7 +74,7 @@
   <header id="header" class="header">
     <div class="header__inner">
       <a href="#hero" class="header__logo" id="header-logo">
-        <img src="assets/images/logo.png" alt="読書会ロゴ" class="header__logo-img">
+        <img src="assets/images/logo.webp" alt="読書会ロゴ" class="header__logo-img" width="36" height="36">
         <span class="header__logo-text" id="header-logo-text"></span>
       </a>
       <nav class="nav" id="nav">
@@ -96,8 +98,8 @@
         <a id="hero-cta" href="#" class="btn btn--primary hero__cta" role="button"></a>
       </div>
       <div class="hero__visual">
-        <img src="assets/images/logo.png" alt="読書会ロゴ" class="hero__logo-img">
-        <img id="hero-image" class="hero__image is-hidden" src="" alt="読書会の様子">
+        <img src="assets/images/logo.webp" alt="読書会ロゴ" class="hero__logo-img" width="300" height="300">
+        <img id="hero-image" class="hero__image is-hidden" src="" alt="読書会の様子" width="480" height="320">
       </div>
     </div>
   </section>
@@ -230,6 +232,6 @@
     <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
   </button>
 
-  <script src="assets/js/main.js?v=4"></script>
+  <script src="assets/js/main.js?v=5"></script>
 </body>
 </html>
