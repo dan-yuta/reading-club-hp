@@ -933,6 +933,21 @@
   /* ==========================================
      初期化
      ========================================== */
+  /**
+   * 本開きローダーを閉じる
+   */
+  function dismissBookLoader() {
+    var loader = document.getElementById("book-loader");
+    if (!loader) return;
+    // アニメーション完了を待ってからフェードアウト
+    setTimeout(function () {
+      loader.classList.add("is-done");
+      loader.addEventListener("transitionend", function () {
+        loader.remove();
+      });
+    }, 1800);
+  }
+
   function init() {
     document.body.classList.add("is-loading");
 
@@ -945,10 +960,12 @@
         buildPage(data);
         initScrollAnimations();
         initBackToTop();
+        dismissBookLoader();
       })
       .catch(function (err) {
         console.error("Error loading content:", err);
         document.body.classList.remove("is-loading");
+        dismissBookLoader();
       });
   }
 
