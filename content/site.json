@@ -23,7 +23,9 @@
     "apply_url": "https://docs.google.com/forms/d/e/1FAIpQLSdsmOYjAQaOH-rqNbhXku1r0StQ80xSK7LHdALz4q8u4rJjaQ/viewform",
     "note_url": "https://note.com/bookmeeting999",
     "x_url": "https://x.com/bookmeeting999",
-    "line_url": "https://line.me/ti/g2/01U1LNCn9AgZhFddOWRWjOX6SGaNZzzVewNgGA?utm_source=invitation&utm_medium=link_copy&utm_campaign=default"
+    "line_url": "https://line.me/ti/g2/01U1LNCn9AgZhFddOWRWjOX6SGaNZzzVewNgGA?utm_source=invitation&utm_medium=link_copy&utm_campaign=default",
+    "dokusyokai_url": "https://dokusyokai.me/group/741",
+    "kokucheese_url": "http://kokuchpro.com/group/99999/"
   },
   "hero": {
     "headline": "シン・ビジネス、自己啓発読書会",
@@ -161,7 +163,7 @@
   },
   "basics": {
     "title": "開催概要",
-    "note": "詳細の日程はX、LINEオープンチャット、お問い合わせフォームにてご確認いただけます。",
+    "note": "詳細の日程はX、LINEオープンチャット、読書会へ行こう！、こくちーずにてご確認いただけます。",
     "cta_text": "参加申込みはこちら",
     "items": [
       { "label": "開催日時", "value": "土日祝日 朝 8:00 開始（月2回）", "note": "2名の場合は約1時間、3名以上の場合は約1時間半" },
@@ -220,8 +222,20 @@
   },
   "sns": {
     "title": "SNS・リンク",
-    "body": "開催日程の告知や、過去に紹介された本の記録をご覧いただけます。",
+    "body": "開催日程の告知や、過去に紹介された本の記録をご覧いただけます。\n読書会へ行こう！・こくちーずからもお申込みいただけます。",
     "items": [
+      {
+        "icon": "dokusyokai",
+        "label": "読書会へ行こう！",
+        "url": "https://dokusyokai.me/group/741",
+        "text": "日程確認・参加申込み"
+      },
+      {
+        "icon": "kokucheese",
+        "label": "こくちーず",
+        "url": "http://kokuchpro.com/group/99999/",
+        "text": "日程確認・参加申込み"
+      },
       {
         "icon": "note_com",
         "label": "note",
@@ -244,8 +258,8 @@
   },
   "cta_bottom": {
     "title": "まずは気軽にご参加ください",
-    "body": "一人での参加がほとんどです。\n初めての方も、まずは一度体験してみてください。",
-    "cta_text": "お申し込みフォームへ"
+    "body": "一人での参加がほとんどです。\n初めての方も、まずは一度体験してみてください。\nGoogleフォームのほか、読書会へ行こう！・こくちーずからもお申込みいただけます。",
+    "cta_text": "Googleフォームで申し込む"
   },
   "footer": {
     "message": "",
