@@ -8,7 +8,7 @@
 
 - HTML / CSS / JavaScript（フレームワーク不使用）
 - コンテンツは `content/site.json` で一元管理
-- Google Fonts: Noto Serif JP（見出し） + Zen Maru Gothic（本文）
+- Google Fonts: Noto Sans JP + Inter
 - Netlify でデプロイ（https://reading-club-hp.netlify.app/）
 
 ## デザイン
