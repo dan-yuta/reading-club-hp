@@ -116,7 +116,7 @@ npx serve .
 
 - ヒーロー画像は実写写真、その他はナノバナナ（Google Gemini Image）で生成
 - JSON の値を空にすると、その画像は非表示になる
-- ファビコン・ロゴは `assets/images/logo.png` から生成済み
+- ファビコン・ロゴは `assets/images/logo.webp`（元画像: `logo.png`）から生成済み
 - `hero-old.webp` は旧AI生成ヒーロー画像のバックアップ
 
 ## フォルダ構成
@@ -130,7 +130,8 @@ npx serve .
 │   ├── js/
 │   │   └── main.js         # JSON読み込み・DOM構築・SVGアイコン・アニメーション
 │   └── images/
-│       ├── logo.png         # ロゴ（ヘッダー・ヒーロー・ファビコン元画像）
+│       ├── logo.webp        # ロゴ（ヘッダー・ヒーロー表示用）
+│       ├── logo.png         # ロゴ元画像（ファビコン生成元）
 │       ├── hero.webp        # ヒーロー画像（実写写真）
 │       ├── hero-old.webp    # 旧ヒーロー画像（AI生成・バックアップ）
 │       ├── reassurance.webp # 安心ポイント画像
@@ -167,8 +168,10 @@ npx serve .
 - OGP / Twitter Card メタタグ設定済み
 - robots.txt / sitemap.xml 配備済み
 - canonical URL 設定済み
-- Google Fonts の preconnect 設定
-- 画像の lazy loading（`loading="lazy"`）
+- Google Fonts の preconnect + 非同期読み込み
+- 画像の lazy loading（`loading="lazy"`）+ width/height 属性
+- Google Search Console 登録済み + sitemap送信済み
+- 構造化データ（JSON-LD: Organization + WebSite）
 
 ### 今後のTODO
 
@@ -176,3 +179,4 @@ npx serve .
 - [x] canonical URL の設定
 - [x] Google Search Console 登録 + sitemap送信
 - [x] 構造化データ（JSON-LD）追加（Organization + WebSite）
+- [x] Lighthouse パフォーマンス改善（43→65: フォント非同期・logo WebP化・画像サイズ指定・コントラスト修正）
