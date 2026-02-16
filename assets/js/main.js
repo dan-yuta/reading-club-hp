@@ -55,6 +55,7 @@
 
   /* ---------- SNS Brand Images (外部画像) ---------- */
   var SNS_IMAGES = {
+    note_com: "assets/images/icon-note.png",
     dokusyokai: "assets/images/icon-dokusyokai.png",
     kokucheese: "assets/images/icon-kokucheese.png"
   };
