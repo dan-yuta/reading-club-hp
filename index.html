@@ -42,15 +42,19 @@
 </head>
 <body>
 
-  <!-- ===== Book Opening Loader — Portal Zoom ===== -->
+  <!-- ===== Book Opening Loader — Desk Flip & Zoom ===== -->
   <div id="book-loader" class="book-loader">
-    <div class="book-loader__wrapper">
+    <div class="book-loader__scene">
       <div class="book-loader__book">
-        <div class="book-loader__spine"></div>
-        <div class="book-loader__cover book-loader__cover--left"></div>
-        <div class="book-loader__cover book-loader__cover--right"></div>
-        <div class="book-loader__page book-loader__page--left"></div>
-        <div class="book-loader__page book-loader__page--right"></div>
+        <div class="book-loader__back"></div>
+        <div class="book-loader__spread">
+          <div class="book-loader__page book-loader__page--left"></div>
+          <div class="book-loader__page book-loader__page--right"></div>
+        </div>
+        <div class="book-loader__flip book-loader__flip--3"></div>
+        <div class="book-loader__flip book-loader__flip--2"></div>
+        <div class="book-loader__flip book-loader__flip--1"></div>
+        <div class="book-loader__cover"></div>
       </div>
     </div>
   </div>

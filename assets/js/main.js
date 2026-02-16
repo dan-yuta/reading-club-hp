@@ -945,7 +945,7 @@
       loader.addEventListener("transitionend", function () {
         loader.remove();
       });
-    }, 2200);
+    }, 3500);
   }
 
   function init() {
