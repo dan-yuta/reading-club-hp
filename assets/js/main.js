@@ -609,6 +609,17 @@
       html += '</div></div>';
     }
 
+    // noteリンク（過去に発表された本の参考）
+    if (sec.note_reference && hasValue(sec.note_reference.url)) {
+      html += '<p class="book-rules__note-ref">' +
+        escapeHtml(sec.note_reference.text) +
+        '<a href="' + escapeHtml(sec.note_reference.url) + '" target="_blank" rel="noopener noreferrer">' +
+        escapeHtml(sec.note_reference.link_text) +
+        '</a>' +
+        escapeHtml(sec.note_reference.suffix) +
+        '</p>';
+    }
+
     contentEl.innerHTML = html;
   }
 

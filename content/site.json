@@ -147,6 +147,12 @@
         "『ハリー・ポッター』シリーズ（小説）",
         "『司法試験 民法論文対策』（資格専門書）"
       ]
+    },
+    "note_reference": {
+      "text": "過去に発表された本の一覧は",
+      "link_text": "note",
+      "url": "https://note.com/bookmeeting999",
+      "suffix": "でご覧いただけます。"
     }
   },
   "rules": {
@@ -237,22 +243,22 @@
         "text": "日程確認・参加申込み"
       },
       {
-        "icon": "note_com",
-        "label": "note",
-        "url": "https://note.com/bookmeeting999",
-        "text": "過去の紹介本を見る"
-      },
-      {
         "icon": "x_social",
         "label": "X（旧Twitter）",
         "url": "https://x.com/bookmeeting999",
-        "text": "@bookmeeting999"
+        "text": "日程告知・お知らせ"
       },
       {
         "icon": "line",
         "label": "LINEオープンチャット",
         "url": "https://line.me/ti/g2/01U1LNCn9AgZhFddOWRWjOX6SGaNZzzVewNgGA?utm_source=invitation&utm_medium=link_copy&utm_campaign=default",
-        "text": "シン・ビジネス、自己啓発読書会"
+        "text": "日程告知・お知らせ"
+      },
+      {
+        "icon": "note_com",
+        "label": "note",
+        "url": "https://note.com/bookmeeting999",
+        "text": "過去の紹介本を見る"
       }
     ]
   },

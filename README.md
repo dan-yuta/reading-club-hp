@@ -100,7 +100,9 @@ npx serve .
 | 安心ポイントの数字 | `reassurance.items[1].stat` | 空なら非表示 |
 | 本のルール（OK例/NG例） | `book_rules.examples.ok[]` / `ng[]` | 追加・削除自由 |
 | 本のジャンル定義 | `book_rules.definitions` | ビジネス書・自己啓発書 |
+| 過去の発表本リンク | `book_rules.note_reference` | 本のルール末尾にnoteリンク表示 |
 | FAQ | `faq.items[]` | 追加・削除自由 |
+| SNS項目 | `sns.items[]` | 表示順の変更・追加・削除自由 |
 
 ### 画像の管理
 

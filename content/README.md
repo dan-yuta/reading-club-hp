@@ -48,6 +48,19 @@ HTMLやCSSを直接編集する必要はありません。
 ```
 `stat` を空（`""`）にすると数字は表示されません。
 
+### 過去の発表本リンク（本のルール末尾）
+```json
+"book_rules": {
+  "note_reference": {
+    "text": "過去に発表された本の一覧は",
+    "link_text": "note",
+    "url": "https://note.com/bookmeeting999",
+    "suffix": "でご覧いただけます。"
+  }
+}
+```
+`note_reference` を削除またはURLを空にすると非表示になります。
+
 ### FAQ追加
 ```json
 "faq": {
