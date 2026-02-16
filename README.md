@@ -174,5 +174,5 @@ npx serve .
 
 - [x] 画像の WebP 変換（PNG 35MB → WebP 760KB、98%削減）
 - [x] canonical URL の設定
-- [ ] Google Search Console 登録 + sitemap送信
-- [ ] 構造化データ（JSON-LD）追加
+- [x] Google Search Console 登録 + sitemap送信
+- [x] 構造化データ（JSON-LD）追加（Organization + WebSite）
