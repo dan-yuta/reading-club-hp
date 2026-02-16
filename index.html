@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Basic SEO -->
+  <title>シン・ビジネス、自己啓発読書会 | 一人参加が当たり前のオンライン読書会</title>
+  <meta name="description" content="20〜30代向けのオンライン読書会。初心者歓迎・一人参加が当たり前の、フラットで成長できる読書コミュニティです。参加費無料。">
+
+  <!-- Canonical: Netlify本番URLに差し替えてください -->
+  <!-- <link rel="canonical" href="https://your-site.netlify.app/"> -->
+
+  <!-- OGP -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="シン・ビジネス、自己啓発読書会 | 一人参加が当たり前のオンライン読書会">
+  <meta property="og:description" content="20〜30代向けのオンライン読書会。初心者歓迎・一人参加が当たり前の、フラットで成長できる読書コミュニティです。参加費無料。">
+  <meta property="og:url" content="">
+  <!-- OG画像: 1200x630推奨。設定する場合はcontent/site.jsonのog_imageを更新 -->
+  <!-- <meta property="og:image" content=""> -->
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:site_name" content="シン・ビジネス、自己啓発読書会">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="シン・ビジネス、自己啓発読書会">
+  <meta name="twitter:description" content="20〜30代向けのオンライン読書会。初心者歓迎・一人参加が当たり前。参加費無料。">
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/favicon.ico" sizes="32x32">
+  <link rel="icon" href="assets/images/favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="assets/images/favicon-16x16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="assets/images/favicon-180x180.png" sizes="180x180">
+  <link rel="icon" href="assets/images/favicon-192x192.png" type="image/png" sizes="192x192">
+  <link rel="icon" href="assets/images/favicon-512x512.png" type="image/png" sizes="512x512">
+
+  <!-- Google Fonts: Noto Sans JP + Noto Serif JP -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header id="header" class="header">
+    <div class="header__inner">
+      <a href="#hero" class="header__logo" id="header-logo">
+        <img src="assets/images/logo.png" alt="読書会ロゴ" class="header__logo-img">
+        <span class="header__logo-text" id="header-logo-text"></span>
+      </a>
+      <nav class="nav" id="nav">
+        <ul class="nav__list" id="nav-list"></ul>
+      </nav>
+      <button class="nav__toggle" id="nav-toggle" type="button" aria-label="メニューを開閉" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== Hero — 2 column layout ===== -->
+  <section id="hero" class="hero" aria-label="メインビジュアル">
+    <div class="hero__inner">
+      <div class="hero__text">
+        <div id="hero-badges" class="hero__badges"></div>
+        <h1 id="hero-headline" class="hero__headline"></h1>
+        <p id="hero-subheadline" class="hero__subheadline"></p>
+        <a id="hero-cta" href="#" class="btn btn--primary hero__cta" role="button"></a>
+      </div>
+      <div class="hero__visual">
+        <img src="assets/images/logo.png" alt="読書会ロゴ" class="hero__logo-img">
+        <img id="hero-image" class="hero__image is-hidden" src="" alt="読書会の様子">
+      </div>
+    </div>
+  </section>
+
+  <main>
+
+    <!-- ===== ようこそ（導入） ===== -->
+    <section id="intro" class="section intro" aria-labelledby="intro-title">
+      <div class="container">
+        <h2 id="intro-title" class="section__title"></h2>
+        <div id="intro-body" class="intro__body"></div>
+      </div>
+    </section>
+
+    <!-- ===== こんな方におすすめ ===== -->
+    <section id="recommended" class="section recommended" aria-labelledby="recommended-title">
+      <div class="container">
+        <h2 id="recommended-title" class="section__title"></h2>
+        <ul id="recommended-list" class="card-grid recommended__list"></ul>
+      </div>
+    </section>
+
+    <!-- ===== 安心ポイント ===== -->
+    <section id="reassurance" class="section reassurance" aria-labelledby="reassurance-title">
+      <div class="container container--wide">
+        <h2 id="reassurance-title" class="section__title"></h2>
+        <div id="reassurance-image" class="section__image-wrapper"></div>
+        <div id="reassurance-list" class="card-grid reassurance__list"></div>
+      </div>
+    </section>
+
+    <!-- ===== 成長できる理由 ===== -->
+    <section id="growth" class="section growth" aria-labelledby="growth-title">
+      <div class="container container--wide">
+        <h2 id="growth-title" class="section__title"></h2>
+        <div id="growth-image" class="section__image-wrapper"></div>
+        <div id="growth-list" class="card-grid growth__list"></div>
+      </div>
+    </section>
+
+    <!-- ===== 発表の流れ ===== -->
+    <section id="flow" class="section flow" aria-labelledby="flow-title">
+      <div class="container">
+        <h2 id="flow-title" class="section__title"></h2>
+        <div id="flow-image" class="flow__image-wrapper"></div>
+        <ol id="flow-steps" class="flow__steps"></ol>
+        <p id="flow-note" class="flow__note"></p>
+      </div>
+    </section>
+
+    <!-- ===== 開催概要 ===== -->
+    <section id="schedule" class="section basics" aria-labelledby="schedule-title">
+      <div class="container">
+        <h2 id="schedule-title" class="section__title"></h2>
+        <div class="basics__card card">
+          <dl id="basics-list" class="basics__dl"></dl>
+        </div>
+        <p id="schedule-note" class="schedule__note"></p>
+        <div class="schedule__cta-wrap">
+          <a id="schedule-cta" href="#" class="btn btn--primary" role="button"></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 本についてのガイドライン ===== -->
+    <section id="book-rules" class="section book-rules" aria-labelledby="book-rules-title">
+      <div class="container">
+        <h2 id="book-rules-title" class="section__title"></h2>
+        <p id="book-rules-lead" class="book-rules__lead"></p>
+        <div id="book-rules-content" class="book-rules__content"></div>
+      </div>
+    </section>
+
+    <!-- ===== ルールとマナー ===== -->
+    <section id="rules" class="section rules" aria-labelledby="rules-title">
+      <div class="container">
+        <h2 id="rules-title" class="section__title"></h2>
+        <div class="rules__card card">
+          <h3 class="rules__subtitle">禁止事項</h3>
+          <ul id="rules-prohibited" class="rules__list"></ul>
+          <div id="rules-notes" class="rules__notes"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section id="faq" class="section faq" aria-labelledby="faq-title">
+      <div class="container">
+        <h2 id="faq-title" class="section__title"></h2>
+        <div id="faq-list" class="faq__list"></div>
+      </div>
+    </section>
+
+    <!-- ===== SNS（日程のお知らせ） ===== -->
+    <section id="sns" class="section sns" aria-labelledby="sns-title">
+      <div class="container">
+        <h2 id="sns-title" class="section__title"></h2>
+        <p id="sns-body" class="sns__body"></p>
+        <div id="sns-list" class="sns__list"></div>
+      </div>
+    </section>
+
+    <!-- ===== 申込みCTA（下部） ===== -->
+    <section id="cta-bottom" class="section cta-bottom" aria-labelledby="cta-bottom-title">
+      <div class="container">
+        <h2 id="cta-bottom-title" class="section__title"></h2>
+        <div id="cta-image" class="section__image-wrapper"></div>
+        <p id="cta-bottom-body" class="cta-bottom__body"></p>
+        <a id="cta-bottom-btn" href="#" class="btn btn--primary" role="button"></a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== フッター ===== -->
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div id="footer-note" class="footer__note"></div>
+      <p id="footer-copyright" class="footer__copyright"></p>
+    </div>
+  </footer>
+
+  <!-- モバイル固定CTA -->
+  <div id="mobile-cta" class="mobile-cta" aria-hidden="true">
+    <a id="mobile-cta-btn" href="#" class="btn btn--primary btn--mobile-fixed"></a>
+  </div>
+
+  <!-- トップに戻るボタン -->
+  <button id="back-to-top" class="back-to-top" type="button" aria-label="ページの先頭に戻る">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

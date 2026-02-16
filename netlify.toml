@@ -1,0 +1,31 @@
+[build]
+  publish = "."
+
+# public/ 配下のファイルをルートに配置
+[[redirects]]
+  from = "/robots.txt"
+  to = "/public/robots.txt"
+  status = 200
+
+[[redirects]]
+  from = "/sitemap.xml"
+  to = "/public/sitemap.xml"
+  status = 200
+
+# セキュリティ・パフォーマンス用ヘッダー
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/content/*"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"

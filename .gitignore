@@ -1,0 +1,15 @@
+# ローカル開発ツール（デプロイ不要）
+_dev/
+
+# OS生成ファイル
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# エディタ
+.vscode/
+*.swp
+*~
+
+# プロンプト（サイトには不要）
+prompts/
