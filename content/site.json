@@ -254,7 +254,7 @@
     "sns": []
   },
   "images": {
-    "hero": "assets/images/hero.webp",
+    "hero": "assets/images/hero.webp?v=2",
     "reassurance": "assets/images/reassurance.webp",
     "growth": "assets/images/growth.webp",
     "flow": "assets/images/flow.webp",
