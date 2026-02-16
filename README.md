@@ -85,7 +85,7 @@ npx serve .
 
 **更新は基本 `content/site.json` を触るだけです。**
 
-詳細は [content/README.md](content/README.md) を参照してください。
+詳細は以下を参照してください。
 
 ### 主な更新箇所
 
@@ -116,14 +116,14 @@ npx serve .
 
 - ヒーロー画像は実写写真、その他はナノバナナ（Google Gemini Image）で生成
 - JSON の値を空にすると、その画像は非表示になる
-- ファビコン・ロゴは `assets/images/logo.webp`（元画像: `logo.png`）から生成済み
-- `hero-old.webp` は旧AI生成ヒーロー画像のバックアップ
+- ファビコン・ロゴは `assets/images/logo.webp` から生成済み
 
 ## フォルダ構成
 
 ```
 /
 ├── index.html              # メインページ
+├── googledeab7f9888863de5.html  # Google Search Console 認証
 ├── assets/
 │   ├── css/
 │   │   └── styles.css      # スタイルシート（CSS Custom Properties）
@@ -131,19 +131,16 @@ npx serve .
 │   │   └── main.js         # JSON読み込み・DOM構築・SVGアイコン・アニメーション
 │   └── images/
 │       ├── logo.webp        # ロゴ（ヘッダー・ヒーロー表示用）
-│       ├── logo.png         # ロゴ元画像（ファビコン生成元）
 │       ├── hero.webp        # ヒーロー画像（実写写真）
-│       ├── hero-old.webp    # 旧ヒーロー画像（AI生成・バックアップ）
 │       ├── reassurance.webp # 安心ポイント画像
 │       ├── growth.webp      # 成長できる理由画像
 │       ├── flow.webp        # 発表の流れ画像
 │       ├── cta.webp         # CTA画像
+│       ├── icon-*.png       # SNSアイコン（note, 読書会, こくちーず）
 │       ├── favicon.ico      # ファビコン
-│       ├── favicon-*.png    # 各サイズファビコン（16/32/48/180/192/512）
-│       └── README.md        # 画像の配置ルール
+│       └── favicon-*.png    # 各サイズファビコン（16/32/180/192/512）
 ├── content/
-│   ├── site.json           # 全コンテンツ（更新はここ）
-│   └── README.md           # 更新方法の説明
+│   └── site.json           # 全コンテンツ（更新はここ）
 ├── public/
 │   ├── robots.txt          # クロール設定
 │   └── sitemap.xml         # サイトマップ
