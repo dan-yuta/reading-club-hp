@@ -8,15 +8,16 @@
 
 - HTML / CSS / JavaScript（フレームワーク不使用）
 - コンテンツは `content/site.json` で一元管理
-- Google Fonts: Noto Sans JP + Noto Serif JP
+- Google Fonts: Klee One（見出し） + Zen Maru Gothic（本文）
 - Netlify でデプロイ（https://reading-club-hp.netlify.app/）
 
 ## デザイン
 
 - Airbnb / MUJI / Notion 風のクリーンで洗練されたデザイン
-- カラースキーム: 青系（ネイビー / スカイブルー）
+- カラースキーム: ブラウン系（温かみのあるアースカラー）
 - ヒーロー: 2カラムのエディトリアルレイアウト
 - 各セクション: カード、番号付きリスト、タイムライン等を使い分け
+- 本の開閉→ズームインのポータルアニメーション（ローダー）
 - スクロールフェードインアニメーション（IntersectionObserver）
 - レスポンシブ対応（3ブレークポイント: 639px / 959px / 1199px）
 - モバイル固定CTAバー
