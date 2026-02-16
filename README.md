@@ -104,15 +104,16 @@ npx serve .
 
 | 画像 | JSON パス | ファイル | 用途 |
 |---|---|---|---|
-| ヒーロー | `images.hero` | `assets/images/hero.webp` | メインビジュアル右側 |
+| ヒーロー | `images.hero` | `assets/images/hero.webp` | メインビジュアル右側（実写写真） |
 | 安心ポイント | `images.reassurance` | `assets/images/reassurance.webp` | セクション上部 |
 | 成長できる理由 | `images.growth` | `assets/images/growth.webp` | セクション上部 |
 | 発表の流れ | `images.flow` | `assets/images/flow.webp` | セクション上部 |
 | CTA | `images.cta` | `assets/images/cta.webp` | 申込みセクション |
 
-- 画像はナノバナナ（Google Gemini Image）で生成
+- ヒーロー画像は実写写真、その他はナノバナナ（Google Gemini Image）で生成
 - JSON の値を空にすると、その画像は非表示になる
 - ファビコン・ロゴは `assets/images/logo.png` から生成済み
+- `hero-old.webp` は旧AI生成ヒーロー画像のバックアップ
 
 ## フォルダ構成
 
@@ -126,7 +127,8 @@ npx serve .
 │   │   └── main.js         # JSON読み込み・DOM構築・SVGアイコン・アニメーション
 │   └── images/
 │       ├── logo.png         # ロゴ（ヘッダー・ヒーロー・ファビコン元画像）
-│       ├── hero.webp        # ヒーロー画像
+│       ├── hero.webp        # ヒーロー画像（実写写真）
+│       ├── hero-old.webp    # 旧ヒーロー画像（AI生成・バックアップ）
 │       ├── reassurance.webp # 安心ポイント画像
 │       ├── growth.webp      # 成長できる理由画像
 │       ├── flow.webp        # 発表の流れ画像
