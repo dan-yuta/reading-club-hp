@@ -25,17 +25,17 @@
   --font-en: "Inter", "Helvetica Neue", Arial, sans-serif;
 
   --text-xs: 0.8125rem;
-  --text-sm: 0.875rem;
-  --text-base: 1rem;
-  --text-lg: 1.125rem;
+  --text-sm: 0.9375rem;
+  --text-base: 1.0625rem;
+  --text-lg: 1.1875rem;
   --text-xl: 1.375rem;
-  --text-2xl: 1.75rem;
-  --text-3xl: 2.125rem;
-  --text-4xl: 2.75rem;
+  --text-2xl: 1.625rem;
+  --text-3xl: 2rem;
+  --text-4xl: 2.5rem;
 
-  --leading-tight: 1.6;
-  --leading-normal: 1.95;
-  --leading-relaxed: 2.2;
+  --leading-tight: 1.5;
+  --leading-normal: 1.85;
+  --leading-relaxed: 2.0;
 
   --tracking-tight: 0.02em;
   --tracking-normal: 0.04em;
@@ -110,9 +110,9 @@ ul, ol { list-style: none; }
 .section__title {
   font-family: var(--font-sans);
   font-size: var(--text-2xl);
-  font-weight: 600;
+  font-weight: 700;
   line-height: var(--leading-tight);
-  text-align: center;
+  text-align: left;
   margin-bottom: var(--space-8);
   color: var(--color-text);
   letter-spacing: var(--tracking-wide);
@@ -123,15 +123,15 @@ ul, ol { list-style: none; }
 /* ---------- Section Image ---------- */
 .section__image-wrapper {
   max-width: 640px;
-  margin: 0 auto var(--space-8);
-  text-align: center;
+  margin: 0 0 var(--space-8);
+  text-align: left;
 }
 .section__image {
   width: 100%;
   border-radius: var(--radius);
   box-shadow: var(--shadow-md);
 }
-.cta-bottom .section__image-wrapper { max-width: 480px; margin-bottom: var(--space-6); }
+.cta-bottom .section__image-wrapper { max-width: 480px; margin: 0 0 var(--space-6); text-align: left; }
 .cta-bottom .section__image { border-radius: var(--radius-lg); box-shadow: var(--shadow-xl); }
 
 /* ---------- Scroll Animations ---------- */
@@ -226,6 +226,7 @@ ul, ol { list-style: none; }
 }
 .header__logo:hover { opacity: 0.6; color: var(--color-text); text-decoration: none; }
 .header__logo-img { width: 36px; height: 36px; border-radius: 10px; object-fit: cover; flex-shrink: 0; }
+.header__logo-text { white-space: pre-line; line-height: 1.3; }
 
 .nav__list { display: flex; align-items: center; gap: 2px; }
 .nav__item { display: block; }
@@ -285,6 +286,7 @@ ul, ol { list-style: none; }
   margin-bottom: var(--space-8);
   line-height: var(--leading-relaxed);
   letter-spacing: var(--tracking-normal);
+  white-space: pre-line;
 }
 .hero__badges {
   display: flex; flex-wrap: wrap; gap: var(--space-3); margin-bottom: var(--space-8);
@@ -327,7 +329,7 @@ ul, ol { list-style: none; }
    ============================================ */
 .intro { background: var(--color-cream); }
 .intro__body {
-  max-width: 600px; margin: 0 auto; text-align: center;
+  max-width: none; margin: 0; text-align: left;
   color: var(--color-text-secondary);
   font-size: var(--text-base); line-height: var(--leading-relaxed);
   white-space: pre-line;
@@ -356,20 +358,20 @@ ul, ol { list-style: none; }
    ============================================ */
 .reassurance { background: var(--color-cream); }
 .reassurance__list {
-  grid-template-columns: repeat(3, 1fr); gap: var(--space-6);
+  grid-template-columns: 1fr; gap: var(--space-5);
 }
 .reassurance__item {
-  display: flex; flex-direction: column; align-items: center; text-align: center;
+  display: flex; flex-direction: row; align-items: flex-start; text-align: left;
   background: var(--color-white); border-radius: var(--radius-lg);
-  padding: var(--space-6) var(--space-5) var(--space-6);
+  padding: var(--space-6);
   border: 1px solid var(--color-border-light);
   box-shadow: var(--shadow-sm);
   transition: transform 0.4s var(--ease), box-shadow 0.4s var(--ease);
 }
 .reassurance__item:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
 .reassurance__item .icon {
-  width: 64px; height: 64px; margin-bottom: var(--space-5);
-  background: var(--color-cream);
+  width: 56px; height: 56px; margin-right: var(--space-4); margin-bottom: 0;
+  background: var(--color-cream); flex-shrink: 0;
 }
 .reassurance__item .icon svg { width: 28px; height: 28px; }
 .reassurance__item-content { flex: 1; }
@@ -390,7 +392,7 @@ ul, ol { list-style: none; }
    GROWTH — numbered list
    ============================================ */
 .growth { background: var(--color-white); }
-.growth__list { grid-template-columns: 1fr; gap: 0; max-width: 720px; margin: 0 auto; }
+.growth__list { grid-template-columns: 1fr; gap: 0; max-width: 720px; margin: 0; }
 .growth__item {
   display: grid; grid-template-columns: 48px 1fr; gap: var(--space-5);
   align-items: start;
@@ -420,9 +422,9 @@ ul, ol { list-style: none; }
    FLOW — timeline
    ============================================ */
 .flow { background: var(--color-cream); }
-.flow__image-wrapper { margin-bottom: var(--space-6); text-align: center; }
+.flow__image-wrapper { margin-bottom: var(--space-6); text-align: left; }
 .flow__image-wrapper img { max-width: 100%; border-radius: var(--radius); }
-.flow__steps { position: relative; max-width: 640px; margin: 0 auto; }
+.flow__steps { position: relative; max-width: 640px; margin: 0; }
 .flow__step {
   display: flex; gap: var(--space-6); align-items: flex-start;
   padding-bottom: var(--space-6); position: relative;
@@ -458,7 +460,7 @@ ul, ol { list-style: none; }
   font-size: var(--text-sm); color: var(--color-text-muted);
   line-height: var(--leading-normal);
   letter-spacing: var(--tracking-normal);
-  max-width: 640px; margin-left: auto; margin-right: auto;
+  max-width: 640px; margin-left: 0; margin-right: 0;
   border: 1px solid var(--color-border-light);
 }
 
@@ -467,10 +469,10 @@ ul, ol { list-style: none; }
    ============================================ */
 .book-rules { background: var(--color-white); }
 .book-rules__lead {
-  text-align: center; color: var(--color-text-secondary);
+  text-align: left; color: var(--color-text-secondary);
   font-size: var(--text-sm); line-height: var(--leading-normal);
   letter-spacing: var(--tracking-normal);
-  max-width: 600px; margin: 0 auto var(--space-8); white-space: pre-line;
+  max-width: none; margin: 0 0 var(--space-8); white-space: pre-line;
 }
 .book-rules__content { display: grid; gap: var(--space-6); }
 .book-rules__block { padding: var(--space-8); }
@@ -535,8 +537,8 @@ ul, ol { list-style: none; }
 }
 .book-rules__example-list li::before { content: "\2022"; position: absolute; left: 0; color: var(--color-text-muted); }
 .book-rules__note-ref {
-  text-align: center; margin-top: var(--space-6);
-  font-size: var(--text-lg); color: var(--color-text);
+  text-align: left; margin-top: var(--space-6);
+  font-size: var(--text-base); color: var(--color-text);
   font-weight: 500; letter-spacing: var(--tracking-normal);
 }
 .book-rules__note-ref a {
@@ -581,7 +583,7 @@ ul, ol { list-style: none; }
    BASICS
    ============================================ */
 .basics { background: var(--color-white); }
-.basics__card { max-width: 640px; margin: 0 auto; }
+.basics__card { max-width: 640px; margin: 0; }
 .basics__dl { display: grid; grid-template-columns: auto 1fr; gap: 0; }
 .basics__dt {
   padding: var(--space-4) var(--space-8) var(--space-4) 0;
@@ -597,11 +599,11 @@ ul, ol { list-style: none; }
 .basics__dd-note { display: block; font-size: var(--text-xs); color: var(--color-text-muted); margin-top: 4px; white-space: pre-line; }
 .basics__dl > :nth-last-child(-n+2) { border-bottom: none; }
 .schedule__note {
-  text-align: center; font-size: var(--text-sm); color: var(--color-text-muted);
+  text-align: left; font-size: var(--text-sm); color: var(--color-text-muted);
   margin-top: var(--space-5); margin-bottom: var(--space-6);
   letter-spacing: var(--tracking-normal);
 }
-.schedule__cta-wrap { text-align: center; }
+.schedule__cta-wrap { text-align: left; }
 
 /* ============================================
    FAQ — clean accordion
@@ -647,13 +649,13 @@ ul, ol { list-style: none; }
 /* ============================================
    SNS
    ============================================ */
-.sns { background: var(--color-white); text-align: center; }
+.sns { background: var(--color-white); text-align: left; }
 .sns__body {
   font-size: var(--text-sm); color: var(--color-text-secondary);
   margin-bottom: var(--space-6); line-height: var(--leading-relaxed);
   letter-spacing: var(--tracking-normal);
 }
-.sns__list { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: var(--space-4); max-width: 640px; margin: 0 auto; }
+.sns__list { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: var(--space-4); max-width: 640px; margin: 0; }
 .sns__item {
   display: flex; align-items: center; gap: var(--space-4);
   padding: var(--space-4) var(--space-5);
@@ -673,7 +675,7 @@ ul, ol { list-style: none; }
    CTA BOTTOM — full-width band
    ============================================ */
 .cta-bottom {
-  background: var(--color-brown-deep); text-align: center;
+  background: var(--color-brown-deep); text-align: left;
   padding: var(--space-12) 0; color: var(--color-white);
 }
 .cta-bottom .section__title { color: var(--color-white); }
@@ -786,15 +788,12 @@ ul, ol { list-style: none; }
 
 @media (max-width: 959px) {
   .hero { min-height: auto; padding: var(--space-8) 0 var(--space-10); }
-  .hero__inner { grid-template-columns: 1fr; text-align: center; gap: var(--space-8); }
+  .hero__inner { grid-template-columns: 1fr; text-align: left; gap: var(--space-8); }
   .hero__text { max-width: none; }
-  .hero__badges { justify-content: center; }
+  .hero__badges { justify-content: flex-start; }
   .hero__logo-img { width: 200px; height: 200px; }
   .hero__visual { order: -1; }
 
-  .reassurance__list { grid-template-columns: 1fr; gap: var(--space-5); }
-  .reassurance__item { flex-direction: row; text-align: left; padding: var(--space-6); align-items: flex-start; }
-  .reassurance__item .icon { margin-bottom: 0; margin-right: var(--space-4); }
 }
 
 @media (max-width: 639px) {
@@ -818,7 +817,7 @@ ul, ol { list-style: none; }
   .basics__dt { padding-bottom: 4px; border-bottom: none; }
   .basics__dd { padding-top: 0; padding-bottom: var(--space-4); margin-bottom: var(--space-2); }
 
-  .sns__list { grid-template-columns: 1fr; max-width: 400px; margin: 0 auto; }
+  .sns__list { grid-template-columns: 1fr; max-width: none; margin: 0; }
   .sns__item { width: 100%; }
 
   .book-rules__examples { grid-template-columns: 1fr; }
